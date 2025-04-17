@@ -1,0 +1,133 @@
+/* ————— ADAPTIVE ————— */
+
+@media (max-width: 1024px) {
+    .card {
+        width: 48%;
+    }
+
+    .wrapper {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav__list {
+        gap: 20px;
+    }
+}
+
+/* Два столбца от 768px и выше */
+@media (min-width: 770px) {
+    .app-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header__form {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .search-form__input {
+        width: 100%;
+    }
+
+    .card {
+        width: 75%;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        row-gap: 10px;
+    }
+
+    .card div p {
+        text-align: center;
+    }
+
+    .card__heading {
+        text-align: center;
+    }
+
+    .card__content {
+        width: 50%;
+        height: auto;
+        text-align: center;
+    }
+
+    .description__text,
+    .card__description,
+    .textpwa {
+        font-size: 18px;
+    }
+
+    .article-title,
+    .description__title {
+        font-size: 28px;
+    }
+
+    .article-question {
+        font-size: 22px;
+    }
+
+    .contacts-title {
+        font-size: 30px;
+    }
+
+    .messangers {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__heading {
+        font-size: 18px;
+    }
+
+    .card__content {
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
+
+    .footer__link {
+        font-size: 16px;
+    }
+
+    .footer-inner {
+        font-size: 12px;
+    }
+
+    .contacts {
+        padding: 20px 10px;
+    }
+
+    .messanger {
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+
+    .article-title,
+    .description__title {
+        font-size: 24px;
+    }
+
+    .article-question,
+    .description__text,
+    .card__description {
+        font-size: 14px;
+    }
+}
